@@ -1,0 +1,106 @@
+{
+    "code": "gable",
+    "class": "CarpentersStory_BlockFramed",
+    "entityClass": "CarpentersStory_BlockEntityFramed",
+    "attributes": {
+        "shape": {
+            "format": "obj",
+            "base": "carps:block/gable",
+            "rotateYByType": {
+                "*-hor-we-down": 90,
+                "*-hor-we-up": 90,
+                "*-ver-west": 180,
+                "*-hor-south": 90,
+                "*-hor-north": 90
+            },
+            "rotateZByType": {
+                "*-hor-ns-up": 180,
+                "*-hor-we-up": 180,
+                "*-ver-west": 90,
+                "*-ver-east": 90,
+                "*-hor-east": 90,
+                "*-hor-west": -90
+            },
+            "rotateXByType": {
+                "*-ver-south": -90,
+                "*-ver-north": 90,
+                "*-ver-west": 90,
+                "*-ver-east": 90,
+                "*-hor-north": 90,
+                "*-hor-south": -90
+            }
+        }
+    },
+    "behaviors": [
+        { "name": "CarpentersStory_PlacementPrism", "properties": { "drop": { "code": "carps:gable-hor-ns-down" } } },
+        { "name": "WrenchOrientable", "properties": { "baseCode": "gable-*" } }
+    ],
+    "variantgroups": [
+        { "code": "orientation1", "states": ["ver", "hor"] },
+        { "code": "orientation2", "states": ["north", "south", "west", "east", "ns-up", "ns-down", "we-up", "we-down"] }
+    ],
+    "allowedVariants": ["@gable-(ver|hor)-(north|south|west|east)", "@gable-hor-(ns-up|ns-down|we-up|we-down)"],
+    "creativeinventory": { "carps": ["gable-hor-ns-down"] },
+    "shape": {
+        "format": "obj",
+        "base": "carps:block/gable",
+        "rotateYByType": {
+            "*-hor-we-down": 90,
+            "*-hor-we-up": 90,
+            "*-ver-west": 180,
+            "*-hor-south": 90,
+            "*-hor-north": 90
+        },
+        "rotateZByType": {
+            "*-hor-ns-up": 180,
+            "*-hor-we-up": 180,
+            "*-ver-west": 90,
+            "*-ver-east": 90,
+            "*-hor-east": 90,
+            "*-hor-west": -90
+        },
+        "rotateXByType": {
+            "*-ver-south": -90,
+            "*-ver-north": 90,
+            "*-ver-west": 90,
+            "*-ver-east": 90,
+            "*-hor-north": 90,
+            "*-hor-south": -90
+        }
+    },
+    "textures": { "obj": { "base": "game:block/wood-generic" } },
+    "sounds": {
+        "walk": "game:walk/stone",
+        "place": "game:player/ceramicplace"
+    },
+    "blockmaterial": "Wood",
+    "materialDensity": 900,
+    "lightAbsorption": 2,
+    "resistance": 3,
+    "emitsideao": { "all": false },
+    "sideao": { "all": true },
+    "sidesolidByType": {
+        "*-hor-north": { "all": false, "north": true },
+        "*-hor-west": { "all": false, "west": true },
+        "*-hor-south": { "all": false, "south": true },
+        "*-hor-east": { "all": false, "east": true },
+        "*-ver-north": { "all": false, "north": true },
+        "*-ver-south": { "all": false, "south": true },
+        "*-ver-west": { "all": false, "west": true },
+        "*-ver-east": { "all": false, "east": true },
+        "*-down": { "all": false, "down": true },
+        "*-up": { "all": false, "up": true }
+    },
+    "sideopaqueByType": {
+        "*-hor-north": { "all": false, "north": true },
+        "*-hor-west": { "all": false, "west": true },
+        "*-hor-south": { "all": false, "south": true },
+        "*-hor-east": { "all": false, "east": true },
+        "*-ver-north": { "all": false, "north": true },
+        "*-ver-south": { "all": false, "south": true },
+        "*-ver-west": { "all": false, "west": true },
+        "*-ver-east": { "all": false, "east": true },
+        "*-down": { "all": false, "down": true },
+        "*-up": { "all": false, "up": true }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "game:tabname-carps": "Carpenter's Story",
+
+    "blockhelp-addBlock": "Add block",
+    "blockhelp-removeBlock": "Remove block",
+
+    "block-full_corner-*": "Framed (Full Corner)",
+    "block-gable-*": "Framed (Gable)",
+    "block-gable1m-*": "Framed (Gable 1M)",
+    "block-half_block_corner_inside_2-*": "Framed (Half Block Corner Inside 2)",
+    "block-inside_corner-*": "Framed (Inside Corner)",
+    "block-pyramid-*": "Framed (Pyramid)",
+    "block-pyramid1m-*": "Framed (Pyramid 1M)",
+    "block-ramp_corner_filler-*": "Framed (Ramp Corner Filler)",
+    "block-ramp_corner-*": "Framed (Ramp Corner)",
+    "block-ramp-*": "Framed (Ramp)",
+    "block-wedge_full_corner_bottom-*": "Framed (Wedge Full Corner Bottom)",
+    "block-wedge_steep_corner_base-*": "Framed (Wedge Steep Corner Base)",
+    "block-wedge_steep_corner_top-*": "Framed (Wedge Steep Corner Top)",
+    "block-wedge_tip-*": "Framed (Wedge Tip)",
+    "block-wedge-*": "Framed (Wedge)"
+}

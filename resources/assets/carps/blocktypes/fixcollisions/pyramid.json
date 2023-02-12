@@ -1,0 +1,63 @@
+{
+    "code": "pyramid",
+    "class": "CarpentersStory_BlockFramed",
+    "entityClass": "CarpentersStory_BlockEntityFramed",
+    "attributes": {
+        "shape": {
+            "format": "obj",
+            "base": "carps:block/pyramid",
+            "rotateXByType": {
+                "*-north": 90,
+                "*-south": 270,
+                "*-up": 180,
+                "*-down": 0
+            },
+            "rotateZByType": {
+                "*-east": 90,
+                "*-west": 270
+            }
+        },
+        "partialAttachableByType": {
+            "*-down": true,
+            "*-up": true
+        }
+    },
+    "behaviors": [{ "name": "OmniRotatable", "properties": { "rotateSides": true, "facing": "block" } }],
+    "variantgroups": [{ "code": "rot", "states": ["north", "east", "south", "west", "up", "down"] }],
+    "creativeinventory": { "carps": ["*-down"] },
+    "shape": {
+        "format": "obj",
+        "base": "carps:block/pyramid",
+        "rotateXByType": {
+            "*-north": 90,
+            "*-south": 270,
+            "*-up": 180,
+            "*-down": 0
+        },
+        "rotateZByType": {
+            "*-east": 90,
+            "*-west": 270
+        }
+    },
+    "textures": { "obj": { "base": "game:block/wood-generic" } },
+    "sounds": {
+        "walk": "game:walk/stone",
+        "place": "game:player/ceramicplace"
+    },
+    "blockmaterial": "Wood",
+    "materialDensity": 600,
+    "sideSolidOpaqueAoByType": {
+        "*-north": { "all": false, "north": true },
+        "*-east": { "all": false, "east": true },
+        "*-south": { "all": false, "south": true },
+        "*-west": { "all": false, "west": true },
+        "*-up": { "all": false, "up": true },
+        "*-down": { "all": false, "down": true }
+    },
+    "sideAo": { "all": true },
+    "emitSideAoByType": {
+        "*-up": { "all": false, "up": true },
+        "*-down": { "all": false, "down": true },
+        "*": { "all": false }
+    }
+}

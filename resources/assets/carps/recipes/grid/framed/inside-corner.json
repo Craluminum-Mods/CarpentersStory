@@ -1,0 +1,10 @@
+{
+    "ingredientPattern": "_SS,SSS,SSS",
+    "ingredients": {
+        "S": { "type": "item", "code": "game:plank-*" }
+    },
+    "recipeGroup": 2,
+    "width": 3,
+    "height": 3,
+    "output": { "type": "block", "code": "inside_corner-up-south", "quantity": 2 }
+}

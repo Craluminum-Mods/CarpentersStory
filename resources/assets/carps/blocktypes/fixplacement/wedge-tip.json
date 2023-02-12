@@ -1,0 +1,154 @@
+{
+    "code": "wedge_tip",
+    "class": "CarpentersStory_BlockFramed",
+    "entityClass": "CarpentersStory_BlockEntityFramed",
+    "attributes": {
+        "shape": {
+            "format": "obj",
+            "base": "carps:block/wedge-tip",
+            "rotateYByType": {
+                "*-up-north": 0,
+                "*-up-west": 90,
+                "*-up-south": 180,
+                "*-up-east": 270,
+
+                "*-down-north": 0,
+                "*-down-west": 90,
+                "*-down-south": 180,
+                "*-down-east": 270,
+
+                "*-right-north": 0,
+                "*-right-west": 90,
+                "*-right-south": 180,
+                "*-right-east": 270,
+
+                "*-left-north": 0,
+                "*-left-west": 90,
+                "*-left-south": 180,
+                "*-left-east": 270
+            },
+            "rotateZByType": {
+                "*-down-*": 180,
+                "*-right-north": 90,
+                "*-right-south": 270,
+
+                "*-left-north": 270,
+                "*-left-south": 90
+            },
+            "rotateXByType": {
+                "*-right-west": 270,
+                "*-right-east": 270,
+
+                "*-left-west": 90,
+                "*-left-east": 90
+            }
+        }
+    },
+    "behaviors": [
+        {
+            "name": "OmniRotatable",
+            "properties": {
+                "rotateH": true,
+                "rotateV": true,
+                "rotateV4": true,
+                "facing": "block"
+            }
+        },
+        {
+            "name": "WrenchOrientable",
+            "properties": { "baseCode": "wedge_tip-*" }
+        }
+    ],
+    "variantgroups": [
+        { "code": "v", "states": ["up", "left", "down", "right"] },
+        { "code": "rot", "loadFromProperties": "game:abstract/horizontalorientation" }
+    ],
+    "creativeinventory": { "carps": ["wedge_tip-up-south"] },
+    "shape": {
+        "format": "obj",
+        "base": "carps:block/wedge-tip",
+        "rotateYByType": {
+            "*-up-north": 0,
+            "*-up-west": 90,
+            "*-up-south": 180,
+            "*-up-east": 270,
+
+            "*-down-north": 0,
+            "*-down-west": 90,
+            "*-down-south": 180,
+            "*-down-east": 270,
+
+            "*-right-north": 0,
+            "*-right-west": 90,
+            "*-right-south": 180,
+            "*-right-east": 270,
+
+            "*-left-north": 0,
+            "*-left-west": 90,
+            "*-left-south": 180,
+            "*-left-east": 270
+        },
+        "rotateZByType": {
+            "*-down-*": 180,
+            "*-right-north": 90,
+            "*-right-south": 270,
+
+            "*-left-north": 270,
+            "*-left-south": 90
+        },
+        "rotateXByType": {
+            "*-right-west": 270,
+            "*-right-east": 270,
+
+            "*-left-west": 90,
+            "*-left-east": 90
+        }
+    },
+    "textures": { "obj": { "base": "game:block/wood-generic" } },
+    "sounds": {
+        "walk": "game:walk/stone",
+        "place": "game:block/ceramicplace"
+    },
+    "blockmaterial": "Wood",
+    "materialDensity": 900,
+    "lightAbsorption": 2,
+    "resistance": 3,
+    "emitsideao": { "all": false },
+    "sideao": { "all": true },
+    "sidesolidByType": {
+        "*-up-north": { "all": false, "down": true, "north": true },
+        "*-up-west": { "all": false, "down": true, "west": true },
+        "*-up-south": { "all": false, "down": true, "south": true },
+        "*-up-east": { "all": false, "down": true, "east": true },
+        "*-down-north": { "all": false, "up": true, "north": true },
+        "*-down-south": { "all": false, "up": true, "south": true },
+        "*-down-west": { "all": false, "up": true, "west": true },
+        "*-down-east": { "all": false, "up": true, "east": true },
+        "*-right-north": { "all": false, "north": true, "east": true },
+        "*-left-east": { "all": false, "north": true, "east": true },
+        "*-left-north": { "all": false, "north": true, "west": true },
+        "*-left-west": { "all": false, "north": true, "west": true },
+        "*-right-west": { "all": false, "south": true, "west": true },
+        "*-left-south": { "all": false, "south": true, "west": true },
+        "*-right-south": { "all": false, "south": true, "east": true },
+        "*-right-east": { "all": false, "south": true, "east": true }
+    },
+    "sideopaqueByType": {
+        "*-up-north": { "all": false, "down": true, "north": true },
+        "*-up-west": { "all": false, "down": true, "west": true },
+        "*-up-south": { "all": false, "down": true, "south": true },
+        "*-up-east": { "all": false, "down": true, "east": true },
+        "*-down-north": { "all": false, "up": true, "north": true },
+        "*-down-south": { "all": false, "up": true, "south": true },
+        "*-down-west": { "all": false, "up": true, "west": true },
+        "*-down-east": { "all": false, "up": true, "east": true },
+        "*-right-north": { "all": false, "north": true, "east": true },
+        "*-left-east": { "all": false, "north": true, "east": true },
+        "*-left-north": { "all": false, "north": true, "west": true },
+        "*-left-west": { "all": false, "north": true, "west": true },
+        "*-right-west": { "all": false, "south": true, "west": true },
+        "*-left-south": { "all": false, "south": true, "west": true },
+        "*-right-south": { "all": false, "south": true, "east": true },
+        "*-right-east": { "all": false, "south": true, "east": true }
+    }
+}

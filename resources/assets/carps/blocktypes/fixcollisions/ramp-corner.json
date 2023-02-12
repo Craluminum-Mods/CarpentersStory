@@ -1,0 +1,66 @@
+{
+    "code": "ramp_corner",
+    "class": "CarpentersStory_BlockFramed",
+    "entityClass": "CarpentersStory_BlockEntityFramed",
+    "attributes": {
+        "shape": {
+            "format": "obj",
+            "base": "carps:block/ramp-corner",
+            "rotateYByType": {
+                "*-down-north": 0,
+                "*-down-west": 90,
+                "*-down-south": 180,
+                "*-down-east": 270,
+                "*-up-north": 90,
+                "*-up-west": 180,
+                "*-up-south": 270,
+                "*-up-east": 0
+            },
+            "rotateZByType": {
+                "*-up-*": 180
+            }
+        }
+    },
+    "behaviors": [
+        { "name": "CarpentersStory_PlacementQuarterA", "properties": { "drop": { "code": "carps:ramp_corner-down-south" } } },
+        {
+            "name": "WrenchOrientable",
+            "properties": { "baseCode": "ramp_corner-*" }
+        }
+    ],
+    "variantgroups": [
+        { "code": "ver", "states": ["up", "down"] },
+        { "code": "hor", "loadFromProperties": "game:abstract/horizontalorientation" }
+    ],
+    "creativeinventory": { "carps": ["ramp_corner-down-south"] },
+    "shape": {
+        "format": "obj",
+        "base": "carps:block/ramp-corner",
+        "rotateYByType": {
+            "*-down-north": 0,
+            "*-down-west": 90,
+            "*-down-south": 180,
+            "*-down-east": 270,
+            "*-up-north": 90,
+            "*-up-west": 180,
+            "*-up-south": 270,
+            "*-up-east": 0
+        },
+        "rotateZByType": {
+            "*-up-*": 180
+        }
+    },
+    "textures": { "obj": { "base": "game:block/wood-generic" } },
+    "sounds": {
+        "walk": "game:walk/stone",
+        "place": "game:block/ceramicplace"
+    },
+    "blockmaterial": "Wood",
+    "materialDensity": 900,
+    "lightAbsorption": 2,
+    "resistance": 3,
+    "emitsideao": { "all": false },
+    "sideao": { "all": true },
+    "sidesolid": { "all": false },
+    "sideopaque": { "all": false }
+}

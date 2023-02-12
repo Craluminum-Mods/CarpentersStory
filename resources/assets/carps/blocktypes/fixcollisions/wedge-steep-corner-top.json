@@ -1,0 +1,153 @@
+{
+    "code": "wedge_steep_corner_top",
+    "class": "CarpentersStory_BlockFramed",
+    "entityClass": "CarpentersStory_BlockEntityFramed",
+    "attributes": {
+        "shape": {
+            "format": "obj",
+            "base": "carps:block/wedge-steep-corner-top",
+            "rotateYByType": {
+                "*-center-up-right-north": 270,
+                "*-center-down-left-north": 90,
+
+                "*-center-up-right-south": 90,
+                "*-center-down-left-south": 270,
+
+                "*-down-north": 0,
+                "*-down-west": 90,
+                "*-down-south": 180,
+                "*-down-east": 270,
+
+                "*-up-north": 90,
+                "*-up-south": 270,
+                "*-up-west": 180,
+                "*-up-east": 0
+            },
+            "rotateZByType": {
+                "*-center-down-right-north": 180,
+
+                "*-center-up-right-south": 180,
+                "*-center-up-left-south": 180,
+                "*-center-down-left-south": 180,
+
+                "*-center-up-left-west": 270,
+                "*-center-up-right-west": 270,
+                "*-center-down-left-west": 270,
+                "*-center-down-right-west": 270,
+
+                "*-center-up-left-east": 90,
+                "*-center-up-right-east": 90,
+                "*-center-down-left-east": 90,
+                "*-center-down-right-east": 90,
+
+                "@.*-up-(north|south|west|east)": 180
+            },
+            "rotateXByType": {
+                "*-center-up-left-north": 90,
+                "*-center-up-right-north": 90,
+                "*-center-down-left-north": 90,
+                "*-center-down-right-north": 270,
+
+                "*-center-up-left-south": 90,
+                "*-center-up-right-south": 90,
+                "*-center-down-left-south": 90,
+                "*-center-down-right-south": 270,
+
+                "*-center-up-left-west": 90,
+                "*-center-down-left-west": 180,
+                "*-center-down-right-west": 270,
+
+                "*-center-up-left-east": 90,
+                "*-center-up-right-east": 180,
+                "*-center-down-right-east": 270
+            }
+        }
+    },
+    "behaviors": [
+        { "name": "CarpentersStory_PlacementQuarterB", "properties": { "drop": { "code": "carps:wedge_steep_corner_top-down-south" } } },
+        { "name": "WrenchOrientable", "properties": { "baseCode": "wedge_steep_corner_top-*" } }
+    ],
+    "variantgroups": [
+        {
+            "code": "orientation1",
+            "states": ["up", "down", "center-up-left", "center-up-right", "center-down-left", "center-down-right"]
+        },
+        {
+            "code": "orientation2",
+            "states": ["north", "south", "west", "east"]
+        }
+    ],
+    "creativeinventory": { "carps": ["wedge_steep_corner_top-down-south"] },
+    "shape": {
+        "format": "obj",
+        "base": "carps:block/wedge-steep-corner-top",
+        "rotateYByType": {
+            "*-center-up-right-north": 270,
+            "*-center-down-left-north": 90,
+
+            "*-center-up-right-south": 90,
+            "*-center-down-left-south": 270,
+
+            "*-down-north": 0,
+            "*-down-west": 90,
+            "*-down-south": 180,
+            "*-down-east": 270,
+
+            "*-up-north": 90,
+            "*-up-south": 270,
+            "*-up-west": 180,
+            "*-up-east": 0
+        },
+        "rotateZByType": {
+            "*-center-down-right-north": 180,
+
+            "*-center-up-right-south": 180,
+            "*-center-up-left-south": 180,
+            "*-center-down-left-south": 180,
+
+            "*-center-up-left-west": 270,
+            "*-center-up-right-west": 270,
+            "*-center-down-left-west": 270,
+            "*-center-down-right-west": 270,
+
+            "*-center-up-left-east": 90,
+            "*-center-up-right-east": 90,
+            "*-center-down-left-east": 90,
+            "*-center-down-right-east": 90,
+
+            "@.*-up-(north|south|west|east)": 180
+        },
+        "rotateXByType": {
+            "*-center-up-left-north": 90,
+            "*-center-up-right-north": 90,
+            "*-center-down-left-north": 90,
+            "*-center-down-right-north": 270,
+
+            "*-center-up-left-south": 90,
+            "*-center-up-right-south": 90,
+            "*-center-down-left-south": 90,
+            "*-center-down-right-south": 270,
+
+            "*-center-up-left-west": 90,
+            "*-center-down-left-west": 180,
+            "*-center-down-right-west": 270,
+
+            "*-center-up-left-east": 90,
+            "*-center-up-right-east": 180,
+            "*-center-down-right-east": 270
+        }
+    },
+    "textures": { "obj": { "base": "game:block/wood-generic" } },
+    "sounds": {
+        "walk": "game:walk/stone",
+        "place": "game:block/ceramicplace"
+    },
+    "blockmaterial": "Wood",
+    "materialDensity": 900,
+    "lightAbsorption": 2,
+    "resistance": 3,
+    "emitsideao": { "all": false },
+    "sideao": { "all": true },
+    "sidesolid": { "all": false },
+    "sideopaque": { "all": false }
+}
