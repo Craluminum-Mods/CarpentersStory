@@ -22,7 +22,10 @@
             "*-up": true
         }
     },
-    "behaviors": [{ "name": "OmniRotatable", "properties": { "rotateSides": true, "facing": "block" } }],
+    "behaviors": [
+        { "name": "OmniRotatable", "properties": { "rotateSides": true, "facing": "block" } },
+        { "name": "CarpentersStory_ToolModes", "properties": { "groupName": "default" } }
+    ],
     "variantgroups": [{ "code": "rot", "states": ["north", "east", "south", "west", "up", "down"] }],
     "creativeinventory": { "carps": ["*-down"] },
     "shape": {

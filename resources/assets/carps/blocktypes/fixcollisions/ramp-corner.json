@@ -23,10 +23,8 @@
     },
     "behaviors": [
         { "name": "CarpentersStory_PlacementQuarterA", "properties": { "drop": { "code": "carps:ramp_corner-down-south" } } },
-        {
-            "name": "WrenchOrientable",
-            "properties": { "baseCode": "ramp_corner-*" }
-        }
+        { "name": "WrenchOrientable", "properties": { "baseCode": "ramp_corner-*" } },
+        { "name": "CarpentersStory_ToolModes", "properties": { "groupName": "default" } }
     ],
     "variantgroups": [
         { "code": "ver", "states": ["up", "down"] },

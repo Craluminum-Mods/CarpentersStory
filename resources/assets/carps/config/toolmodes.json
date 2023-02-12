@@ -1,0 +1,73 @@
+{
+    "modes": {
+        "default": [
+            {
+                "name": "carps:block-full_corner-down-south",
+                "toBlockCode": "carps:full_corner-down-south",
+                "renderFromCode": "carps:full_corner-down-south"
+            },
+            {
+                "name": "carps:block-gable-hor-ns-down",
+                "toBlockCode": "carps:gable-hor-ns-down",
+                "renderFromCode": "carps:gable-hor-ns-down"
+            },
+            {
+                "name": "carps:block-gable1m-hor-ns-down",
+                "toBlockCode": "carps:gable1m-hor-ns-down",
+                "renderFromCode": "carps:gable1m-hor-ns-down"
+            },
+            {
+                "name": "carps:block-half_block_corner_inside_2-right-east",
+                "toBlockCode": "carps:half_block_corner_inside_2-right-east",
+                "renderFromCode": "carps:half_block_corner_inside_2-right-east"
+            },
+            {
+                "name": "carps:block-inside_corner-down-south",
+                "toBlockCode": "carps:inside_corner-down-south",
+                "renderFromCode": "carps:inside_corner-down-south",
+                "linebreak": true
+            },
+            {
+                "name": "carps:block-pyramid-down",
+                "toBlockCode": "carps:pyramid-down",
+                "renderFromCode": "carps:pyramid-down"
+            },
+            {
+                "name": "carps:block-pyramid1m-down",
+                "toBlockCode": "carps:pyramid1m-down",
+                "renderFromCode": "carps:pyramid1m-down"
+            },
+            {
+                "name": "carps:block-ramp_corner_filler-down-south",
+                "toBlockCode": "carps:ramp_corner_filler-down-south",
+                "renderFromCode": "carps:ramp_corner_filler-down-south"
+            },
+            {
+                "name": "carps:block-ramp_corner-down-south",
+                "toBlockCode": "carps:ramp_corner-down-south",
+                "renderFromCode": "carps:ramp_corner-down-south",
+                "linebreak": true
+            },
+            {
+                "name": "carps:block-ramp-up-south",
+                "toBlockCode": "carps:ramp-up-south",
+                "renderFromCode": "carps:ramp-up-south"
+            },
+            {
+                "name": "carps:block-wedge_full_corner_bottom-down-south",
+                "toBlockCode": "carps:wedge_full_corner_bottom-down-south",
+                "renderFromCode": "carps:wedge_full_corner_bottom-down-south"
+            },
+            {
+                "name": "carps:block-wedge_steep_corner_base-down-south",
+                "toBlockCode": "carps:wedge_steep_corner_base-down-south",
+                "renderFromCode": "carps:wedge_steep_corner_base-down-south"
+            },
+            {
+                "name": "carps:block-wedge_steep_corner_top-down-south",
+                "toBlockCode": "carps:wedge_steep_corner_top-down-south",
+                "renderFromCode": "carps:wedge_steep_corner_top-down-south"
+            }
+        ]
+    }
+}

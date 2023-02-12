@@ -65,7 +65,8 @@
     },
     "behaviors": [
         { "name": "CarpentersStory_PlacementQuarterB", "properties": { "drop": { "code": "carps:wedge_steep_corner_top-down-south" } } },
-        { "name": "WrenchOrientable", "properties": { "baseCode": "wedge_steep_corner_top-*" } }
+        { "name": "WrenchOrientable", "properties": { "baseCode": "wedge_steep_corner_top-*" } },
+        { "name": "CarpentersStory_ToolModes", "properties": { "groupName": "default" } }
     ],
     "variantgroups": [
         {

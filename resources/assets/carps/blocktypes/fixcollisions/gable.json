@@ -33,7 +33,8 @@
     },
     "behaviors": [
         { "name": "CarpentersStory_PlacementPrism", "properties": { "drop": { "code": "carps:gable-hor-ns-down" } } },
-        { "name": "WrenchOrientable", "properties": { "baseCode": "gable-*" } }
+        { "name": "WrenchOrientable", "properties": { "baseCode": "gable-*" } },
+        { "name": "CarpentersStory_ToolModes", "properties": { "groupName": "default" } }
     ],
     "variantgroups": [
         { "code": "orientation1", "states": ["ver", "hor"] },

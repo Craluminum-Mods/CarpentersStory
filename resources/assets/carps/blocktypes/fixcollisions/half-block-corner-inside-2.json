@@ -54,10 +54,8 @@
                 "facing": "player"
             }
         },
-        {
-            "name": "WrenchOrientable",
-            "properties": { "baseCode": "half_block_corner_inside_2-*" }
-        }
+        { "name": "WrenchOrientable", "properties": { "baseCode": "half_block_corner_inside_2-*" } },
+        { "name": "CarpentersStory_ToolModes", "properties": { "groupName": "default" } }
     ],
     "variantgroups": [
         { "code": "v", "states": ["up", "left", "down", "right"] },

@@ -54,10 +54,8 @@
                 "facing": "block"
             }
         },
-        {
-            "name": "WrenchOrientable",
-            "properties": { "baseCode": "ramp-*" }
-        }
+        { "name": "WrenchOrientable", "properties": { "baseCode": "ramp-*" } },
+        { "name": "CarpentersStory_ToolModes", "properties": { "groupName": "default" } }
     ],
     "variantgroups": [
         { "code": "v", "states": ["up", "left", "down", "right"] },
