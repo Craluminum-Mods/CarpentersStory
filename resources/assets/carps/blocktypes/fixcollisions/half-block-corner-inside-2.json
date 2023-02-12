@@ -52,7 +52,7 @@
                 "rotateH": true,
                 "rotateV": true,
                 "rotateV4": true,
-                "facing": "player"
+                "facing": "block"
             }
         },
         { "name": "WrenchOrientable", "properties": { "baseCode": "half_block_corner_inside_2-*" } },
