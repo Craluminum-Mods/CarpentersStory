@@ -3,6 +3,7 @@
     "class": "CarpentersStory_BlockFramed",
     "entityClass": "CarpentersStory_BlockEntityFramed",
     "attributes": {
+        "handbook": { "extraSections": [{ "title": "carps:handbooktitle-placeholder", "text": "carps:handbooktext-placeholder" }] },
         "shape": {
             "format": "obj",
             "base": "carps:block/wedge-steep-corner-base",

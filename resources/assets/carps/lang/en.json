@@ -1,9 +1,6 @@
 {
     "game:tabname-carps": "Carpenter's Story",
 
-    "blockhelp-addBlock": "Add block",
-    "blockhelp-removeBlock": "Remove block",
-
     "block-full_corner-*": "Framed (Full Corner)",
     "block-gable-*": "Framed (Gable)",
     "block-gable1m-*": "Framed (Gable 1M)",
@@ -18,5 +15,11 @@
     "block-wedge_steep_corner_base-*": "Framed (Wedge Steep Corner Base)",
     "block-wedge_steep_corner_top-*": "Framed (Wedge Steep Corner Top)",
     "block-wedge_tip-*": "Framed (Wedge Tip)",
-    "block-wedge-*": "Framed (Wedge)"
+    "block-wedge-*": "Framed (Wedge)",
+
+    "blockhelp-addBlock": "Add block",
+    "blockhelp-removeBlock": "Remove block",
+
+    "handbooktitle-placeholder": "To get",
+    "handbooktext-placeholder": "<a href=\"handbook://block-carps:ramp-up-south\">here</a>"
 }
