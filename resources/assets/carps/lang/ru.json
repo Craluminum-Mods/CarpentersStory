@@ -1,0 +1,24 @@
+{
+    "block-full_corner-*": "Каркас (Полный угол)",
+    "block-gable-*": "Каркас (Фронтон)",
+    "block-gable1m-*": "Каркас (Фронтон 1 м)",
+    "block-half_inside_corner-*": "Каркас (7/8 блока)",
+    "block-inside_corner-*": "Каркас (Внутренний угол)",
+    "block-pyramid-*": "Каркас (Пирамида)",
+    "block-pyramid1m-*": "Каркас (Пирамида 1 м)",
+    "block-ramp_corner_filler-*": "Каркас (Заполнитель угла уклона)",
+    "block-ramp_corner-*": "Каркас (Угол уклона)",
+    "block-ramp-*": "Каркас (Уклон)",
+    "block-wedge_full_corner_bottom-*": "Каркас (Низ полного угла клина)",
+    "block-wedge_steep_corner_base-*": "Каркас (Фундамент угла клина с крутым поворотом)",
+    "block-wedge_steep_corner_top-*": "Каркас (Верх угла клина с крутым поворотом)",
+    "block-wedge_tip-*": "Каркас (Край клина)",
+    "block-wedge-*": "Каркас (Клин)",
+
+    "blockhelp-addBlock": "Добавить блок",
+    "blockhelp-removeBlock": "Убрать блок",
+    "heldhelp-selectshape": "Выбрать форму",
+
+    "handbooktitle-placeholder": "Получить",
+    "handbooktext-placeholder": "<a href=\"handbook://block-carps:ramp-up-south\">здесь</a>"
+}
