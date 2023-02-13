@@ -58,7 +58,8 @@ namespace CarpentersStory
                 storedBlockName = _storedBlock?.GetName();
             }
 
-            dsc.AppendLine().Append(Lang.Get("Contents: {0}", storedBlockName));
+            var format = Lang.Get("carps:format-pastelgreen", storedBlockName);
+            dsc.AppendLine().Append(Lang.Get("Contents: {0}", format));
 
             // dsc.AppendHitPositionDebugText(forPlayer);
 

@@ -21,6 +21,8 @@
     "blockhelp-removeBlock": "Remove block",
     "heldhelp-selectshape": "Select shape",
 
+    "format-pastelgreen": "<font color=\"#b4ecb4\">{0}</font>", // pastel green
+
     "handbooktitle-placeholder": "To get",
     "handbooktext-placeholder": "<a href=\"handbook://block-carps:ramp-up-south\">here</a>"
 }
