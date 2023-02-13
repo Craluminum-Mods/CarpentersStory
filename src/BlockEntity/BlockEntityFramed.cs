@@ -5,7 +5,6 @@ using Vintagestory.API.Util;
 using System.Collections.Generic;
 using System.Text;
 using Vintagestory.API.Config;
-using System;
 
 namespace CarpentersStory
 {
@@ -61,13 +60,7 @@ namespace CarpentersStory
 
             dsc.AppendLine().Append(Lang.Get("Contents: {0}", storedBlockName));
 
-            var xyzint = string.Format(
-                "X: {0}, Y: {1}, Z: {2}",
-                Math.Round(forPlayer.CurrentBlockSelection.HitPosition.X, 2),
-                Math.Round(forPlayer.CurrentBlockSelection.HitPosition.Y, 2),
-                Math.Round(forPlayer.CurrentBlockSelection.HitPosition.Z, 2));
-
-            dsc.AppendLine().Append(xyzint);
+            // dsc.AppendHitPositionDebugText(forPlayer);
 
             base.GetBlockInfo(forPlayer, dsc);
         }
