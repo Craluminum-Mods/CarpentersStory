@@ -1,6 +1,6 @@
 # Blender v3.1.2 OBJ File: ''
 # www.blender.org
-mtllib half-block-corner-inside-2.mtl
+mtllib half-inside-corner.mtl
 o Cube.006
 v 0.500000 0.500000 -0.000000
 v -0.500000 0.000000 0.500000

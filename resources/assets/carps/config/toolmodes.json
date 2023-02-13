@@ -17,9 +17,9 @@
                 "renderFromCode": "carps:gable1m-hor-ns-down"
             },
             {
-                "name": "carps:block-half_block_corner_inside_2-right-east",
-                "toBlockCode": "carps:half_block_corner_inside_2-right-east",
-                "renderFromCode": "carps:half_block_corner_inside_2-right-east"
+                "name": "carps:block-half_inside_corner-right-east",
+                "toBlockCode": "carps:half_inside_corner-right-east",
+                "renderFromCode": "carps:half_inside_corner-right-east"
             },
             {
                 "name": "carps:block-inside_corner-down-south",

@@ -1,12 +1,12 @@
 {
-    "code": "half_block_corner_inside_2",
+    "code": "half_inside_corner",
     "class": "CarpentersStory_BlockFramed",
     "entityClass": "CarpentersStory_BlockEntityFramed",
     "attributes": {
         "handbook": { "extraSections": [{ "title": "carps:handbooktitle-placeholder", "text": "carps:handbooktext-placeholder" }] },
         "shape": {
             "format": "obj",
-            "base": "carps:block/half-block-corner-inside-2",
+            "base": "carps:block/half-inside-corner",
             "rotateYByType": {
                 "*-up-north": 0,
                 "*-up-west": 90,
@@ -55,17 +55,17 @@
                 "facing": "block"
             }
         },
-        { "name": "WrenchOrientable", "properties": { "baseCode": "half_block_corner_inside_2-*" } },
+        { "name": "WrenchOrientable", "properties": { "baseCode": "half_inside_corner-*" } },
         { "name": "CarpentersStory_ToolModes", "properties": { "groupName": "default" } }
     ],
     "variantgroups": [
         { "code": "v", "states": ["up", "left", "down", "right"] },
         { "code": "rot", "loadFromProperties": "game:abstract/horizontalorientation" }
     ],
-    "creativeinventory": { "carps": ["half_block_corner_inside_2-right-east"] },
+    "creativeinventory": { "carps": ["half_inside_corner-right-east"] },
     "shape": {
         "format": "obj",
-        "base": "carps:block/half-block-corner-inside-2",
+        "base": "carps:block/half-inside-corner",
         "rotateYByType": {
             "*-up-north": 0,
             "*-up-west": 90,
