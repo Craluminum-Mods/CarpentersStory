@@ -66,7 +66,18 @@
             {
                 "name": "carps:block-wedge_steep_corner_top-down-south",
                 "toBlockCode": "carps:wedge_steep_corner_top-down-south",
-                "renderFromCode": "carps:wedge_steep_corner_top-down-south"
+                "renderFromCode": "carps:wedge_steep_corner_top-down-south",
+                "linebreak": true
+            },
+            {
+                "name": "carps:block-wedge_tip-center-down-south",
+                "toBlockCode": "carps:wedge_tip-center-down-south",
+                "renderFromCode": "carps:wedge_tip-center-down-south"
+            },
+            {
+                "name": "carps:block-wedge-center-down-south",
+                "toBlockCode": "carps:wedge-center-down-south",
+                "renderFromCode": "carps:wedge-center-down-south"
             }
         ]
     }
