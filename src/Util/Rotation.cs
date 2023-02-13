@@ -65,7 +65,7 @@ namespace CarpentersStory.Util
             var variants = new string[] { horVer[1].Code, horVer[0].Code };
             var blockCode = block.CodeWithVariants(new string[] { "ver", "hor" }, variants);
 
-            return byPlayer.Entity.World.BlockAccessor.GetBlock(blockCode);
+            return byPlayer.Entity.World.GetBlock(blockCode);
         }
 
         public static Block RotatedByQuarterB(this Block block, IPlayer byPlayer, BlockSelection blockSel)
@@ -215,7 +215,7 @@ namespace CarpentersStory.Util
             var variants = new string[] { orientations[0], orientations[1] };
             var blockCode = block.CodeWithVariants(new string[] { "orientation1", "orientation2" }, variants);
 
-            return byPlayer.Entity.World.BlockAccessor.GetBlock(blockCode);
+            return byPlayer.Entity.World.GetBlock(blockCode);
         }
 
         public static Block RotatedPrism(this Block block, IPlayer byPlayer, BlockSelection blockSel)
@@ -295,7 +295,80 @@ namespace CarpentersStory.Util
             var variants = new string[] { orientations[0], orientations[1] };
             var blockCode = block.CodeWithVariants(new string[] { "orientation1", "orientation2" }, variants);
 
-            return byPlayer.Entity.World.BlockAccessor.GetBlock(blockCode);
+            return byPlayer.Entity.World.GetBlock(blockCode);
+        }
+
+        public static Block RotatedWedge(this Block block, IPlayer byPlayer, BlockSelection blockSel)
+        {
+            var horVar = SuggestedHVOrientation(blockSel, byPlayer);
+            var orientations = new List<string>() { null, null };
+
+            var x = Math.Abs(blockSel.HitPosition.X - 0.5);
+            var y = Math.Abs(blockSel.HitPosition.Y - 0.5);
+            var z = Math.Abs(blockSel.HitPosition.Z - 0.5);
+            var opposite = blockSel.Face.Opposite.Code;
+
+            switch (blockSel.Face.Axis)
+            {
+                case EnumAxis.X:
+                    if (z < 0.3 && y < 0.3)
+                    {
+                        orientations[0] = "center-down";
+                        orientations[1] = opposite;
+                    }
+                    else if (z > y)
+                    {
+                        orientations[0] = blockSel.HitPosition.Z < 0.5 ? "left" : "right";
+                        orientations[1] = opposite;
+                    }
+                    else
+                    {
+                        orientations[0] = "center" + (blockSel.HitPosition.Y < 0.5 ? "-down" : "-up");
+                        orientations[1] = opposite;
+                    }
+                    break;
+
+                case EnumAxis.Y:
+                    if (z < 0.3 && x < 0.3)
+                    {
+                        orientations[0] = blockSel.HitPosition.Y < 0.5 ? "center-up" : "center-down";
+                        orientations[1] = horVar[0].Code;
+                    }
+                    else if (z > x)
+                    {
+                        orientations[0] = opposite;
+                        orientations[1] = blockSel.HitPosition.Z < 0.5 ? "north" : "south";
+                    }
+                    else
+                    {
+                        orientations[0] = opposite;
+                        orientations[1] = blockSel.HitPosition.X < 0.5 ? "west" : "east";
+                    }
+                    break;
+
+                case EnumAxis.Z:
+                    if (x < 0.3 && y < 0.3)
+                    {
+                        orientations[0] = "center-down";
+                        orientations[1] = opposite;
+                    }
+                    else if (x > y)
+                    {
+                        orientations[0] = blockSel.HitPosition.X < 0.5 ? "left" : "right";
+                        orientations[1] = opposite;
+                    }
+                    else
+                    {
+                        orientations[0] = "center" + (blockSel.HitPosition.Y < 0.5 ? "-down" : "-up");
+                        orientations[1] = opposite;
+                    }
+                    break;
+            }
+
+            var variants = new string[] { orientations[0], orientations[1] };
+            var blockCode = block.CodeWithVariants(new string[] { "orientation1", "orientation2" }, variants);
+
+            return byPlayer.Entity.World.GetBlock(blockCode);
         }
     }
 }

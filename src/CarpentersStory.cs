@@ -15,6 +15,7 @@ namespace CarpentersStory
         public override void Start(ICoreAPI api)
         {
             base.Start(api);
+            api.RegisterBlockBehaviorClass("CarpentersStory_PlacementWedge", typeof(BlockBehaviorPlacementWedge));
             api.RegisterBlockBehaviorClass("CarpentersStory_PlacementPrism", typeof(BlockBehaviorPlacementPrism));
             api.RegisterBlockBehaviorClass("CarpentersStory_PlacementQuarterA", typeof(BlockBehaviorPlacementQuarterA));
             api.RegisterBlockBehaviorClass("CarpentersStory_PlacementQuarterB", typeof(BlockBehaviorPlacementQuarterB));
