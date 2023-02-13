@@ -165,5 +165,88 @@
         "*-center-*-west": { "all": false, "west": true },
         "@.*-down-(north|south|west|east)": { "all": false, "down": true },
         "@.*-up-(north|south|west|east)": { "all": false, "up": true }
+    },
+    "collisionSelectionBoxesByType": {
+        "full_corner-down-*": [
+            { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.5, "z2": 1 },
+            {
+                "x1": 0.5,
+                "y1": 0.5,
+                "z1": 0.5,
+                "x2": 1,
+                "y2": 1,
+                "z2": 1,
+                "rotateYByType": {
+                    "*-down-north": 180,
+                    "*-down-west": 270,
+                    "*-down-east": 90
+                }
+            }
+        ],
+        "full_corner-up-*": [
+            { "x1": 0, "y1": 0.5, "z1": 0, "x2": 1, "y2": 1, "z2": 1 },
+            {
+                "x1": 0.5,
+                "y1": 0,
+                "z1": 0.5,
+                "x2": 1,
+                "y2": 0.5,
+                "z2": 1,
+                "rotateYByType": {
+                    "*-up-north": 180,
+                    "*-up-west": 270,
+                    "*-up-east": 90
+                }
+            }
+        ],
+        "*-center-*": [
+            {
+                "x1": 0,
+                "y1": 0,
+                "z1": 0.5,
+                "x2": 1,
+                "y2": 1,
+                "z2": 1,
+                "rotateYByType": {
+                    "*-north": 180,
+                    "*-west": 270,
+                    "*-east": 90
+                }
+            },
+            {
+                "x1": 0.5,
+                "y1": 0,
+                "z1": 0,
+                "x2": 1,
+                "y2": 0.5,
+                "z2": 0.5,
+                "rotateYByType": {
+                    "*-down-left-east": 90,
+                    "*-down-left-north": 180,
+                    "*-down-left-west": 180,
+                    "*-down-right-east": 90,
+                    "*-down-right-north": 270,
+                    "*-down-right-south": 90,
+                    "*-up-left-east": 90,
+                    "*-up-left-north": 180,
+                    "*-up-left-west": 180,
+                    "*-up-right-east": 90,
+                    "*-up-right-north": 270,
+                },
+                "rotateZByType": {
+                    "*-down-left-east": 0,
+                    "*-down-left-west": 270,
+                    "*-down-right-east": 270,
+                    "*-up-left-east": 90,
+                    "*-up-left-north": 90,
+                    "*-up-left-south": 90,
+                    "*-up-left-west": 180,
+                    "*-up-right-east": 180,
+                    "*-up-right-north": 90,
+                    "*-up-right-south": 180,
+                    "*-up-right-west": 90,
+                }
+            }
+        ]
     }
 }
