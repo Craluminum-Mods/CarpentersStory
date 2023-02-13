@@ -19,6 +19,7 @@
 
     "blockhelp-addBlock": "Add block",
     "blockhelp-removeBlock": "Remove block",
+    "heldhelp-selectshape": "Select shape",
 
     "handbooktitle-placeholder": "To get",
     "handbooktext-placeholder": "<a href=\"handbook://block-carps:ramp-up-south\">here</a>"

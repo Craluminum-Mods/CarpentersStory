@@ -53,7 +53,7 @@ namespace CarpentersStory
 
             return base.GetHeldInteractionHelp(inSlot, ref handling).Append(new WorldInteraction
             {
-                ActionLangCode = "heldhelp-settoolmode",
+                ActionLangCode = "carps:heldhelp-selectshape",
                 HotKeyCode = "toolmodeselect",
                 MouseButton = EnumMouseButton.None
             });
