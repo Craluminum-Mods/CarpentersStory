@@ -3,8 +3,8 @@
     "modid": "carps",
     "name": "Carpenter's Story",
     "authors": ["Craluminum2413"],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "dependencies": {
-        "game": "1.17.0"
+        "game": "1.18.0-pre.6"
     }
 }
