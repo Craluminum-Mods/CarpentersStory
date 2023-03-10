@@ -108,6 +108,11 @@ namespace CarpentersStory
                     capi.Tesselator.TesselateBlock(this, out mesh);
                 }
 
+                if (blockEntity?.storedBlock?.Block?.VertexFlags.Reflective == true)
+                {
+                    mesh.SetVertexFlags(VertexFlags.ReflectiveBitMask);
+                }
+
                 return mesh;
             }
 
