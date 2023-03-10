@@ -72,8 +72,10 @@
     },
     "textures": { "obj": { "base": "game:block/wood-generic" } },
     "sounds": {
-        "walk": "game:walk/stone",
-        "place": "game:player/ceramicplace"
+        "walk": "game:walk/wood",
+        "hit": "game:block/planks",
+        "break": "game:block/planks",
+        "place": "game:block/planks"
     },
     "blockmaterial": "Wood",
     "materialDensity": 900,
