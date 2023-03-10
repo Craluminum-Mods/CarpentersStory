@@ -114,6 +114,11 @@ namespace CarpentersStory
             return null;
         }
 
+        public override bool ShouldMergeFace(int facingIndex, Block neighbourblock, int intraChunkIndex3d)
+        {
+            return this == neighbourblock;
+        }
+
         public string GetMeshCacheKey(ItemStack stack) => Code.ToString();
 
         public override bool OnBlockInteractStart(IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel)
