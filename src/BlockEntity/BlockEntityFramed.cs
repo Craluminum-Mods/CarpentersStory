@@ -92,7 +92,19 @@ namespace CarpentersStory
                 return false;
             }
 
-            storedBlock = fromSlot.TakeOut(1);
+            switch (byPlayer.WorldData.CurrentGameMode)
+            {
+                case EnumGameMode.Creative:
+                    var fromstack = fromSlot.Itemstack.Clone();
+                    fromstack.StackSize = 1;
+
+                    storedBlock = fromstack;
+                    break;
+
+                case EnumGameMode.Survival:
+                    storedBlock = fromSlot.TakeOut(1);
+                    break;
+            }
 
             MarkDirty(true);
             return true;
